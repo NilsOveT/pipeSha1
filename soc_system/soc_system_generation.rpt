@@ -1,0 +1,80 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Nilsi\Documents\FPGA\pipeSha1\soc_system.qsys --synthesis=VHDL --output-directory=C:\Users\Nilsi\Documents\FPGA\pipeSha1\soc_system\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading pipeSha1/soc_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 15.0]
+Progress: Parameterizing module clk_0
+Progress: Adding hash0 [altera_avalon_pio 15.0]
+Progress: Parameterizing module hash0
+Progress: Adding hps_0 [altera_hps 15.0]
+Progress: Parameterizing module hps_0
+Progress: Adding result [altera_avalon_pio 15.0]
+Progress: Parameterizing module result
+Progress: Adding snddInCount [altera_avalon_pio 15.0]
+Progress: Parameterizing module snddInCount
+Progress: Adding snddOutCount [altera_avalon_pio 15.0]
+Progress: Parameterizing module snddOutCount
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: soc_system.result: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system.snddInCount: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: soc_system.hps_0: hps_0.h2f_mpu_events must be exported, or connected to a matching conduit.
+Info: soc_system: Generating soc_system "soc_system" for QUARTUS_SYNTH
+Info: hash0: Starting RTL generation for module 'soc_system_hash0'
+Info: hash0:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_hash0 --dir=C:/Users/Nilsi/AppData/Local/Temp/alt6632_9172089060321771126.dir/0001_hash0_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/Nilsi/AppData/Local/Temp/alt6632_9172089060321771126.dir/0001_hash0_gen//soc_system_hash0_component_configuration.pl  --do_build_sim=0  ]
+Info: hash0: Done RTL generation for module 'soc_system_hash0'
+Info: hash0: "soc_system" instantiated altera_avalon_pio "hash0"
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: result: Starting RTL generation for module 'soc_system_result'
+Info: result:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_result --dir=C:/Users/Nilsi/AppData/Local/Temp/alt6632_9172089060321771126.dir/0002_result_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/Nilsi/AppData/Local/Temp/alt6632_9172089060321771126.dir/0002_result_gen//soc_system_result_component_configuration.pl  --do_build_sim=0  ]
+Info: result: Done RTL generation for module 'soc_system_result'
+Info: result: "soc_system" instantiated altera_avalon_pio "result"
+Info: snddInCount: Starting RTL generation for module 'soc_system_snddInCount'
+Info: snddInCount:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_snddInCount --dir=C:/Users/Nilsi/AppData/Local/Temp/alt6632_9172089060321771126.dir/0003_snddInCount_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/Nilsi/AppData/Local/Temp/alt6632_9172089060321771126.dir/0003_snddInCount_gen//soc_system_snddInCount_component_configuration.pl  --do_build_sim=0  ]
+Info: snddInCount: Done RTL generation for module 'soc_system_snddInCount'
+Info: snddInCount: "soc_system" instantiated altera_avalon_pio "snddInCount"
+Info: snddOutCount: Starting RTL generation for module 'soc_system_snddOutCount'
+Info: snddOutCount:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_snddOutCount --dir=C:/Users/Nilsi/AppData/Local/Temp/alt6632_9172089060321771126.dir/0004_snddOutCount_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/Nilsi/AppData/Local/Temp/alt6632_9172089060321771126.dir/0004_snddOutCount_gen//soc_system_snddOutCount_component_configuration.pl  --do_build_sim=0  ]
+Info: snddOutCount: Done RTL generation for module 'soc_system_snddOutCount'
+Info: snddOutCount: "soc_system" instantiated altera_avalon_pio "snddOutCount"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: hash0_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "hash0_s1_translator"
+Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: hash0_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "hash0_s1_agent"
+Info: hash0_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "hash0_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: hps_0_h2f_lw_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_0_h2f_lw_axi_master_wr_limiter"
+Info: Reusing file C:/Users/Nilsi/Documents/FPGA/pipeSha1/soc_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: hash0_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "hash0_s1_burst_adapter"
+Info: Reusing file C:/Users/Nilsi/Documents/FPGA/pipeSha1/soc_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/Nilsi/Documents/FPGA/pipeSha1/soc_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Nilsi/Documents/FPGA/pipeSha1/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: soc_system: Done "soc_system" with 25 modules, 82 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
